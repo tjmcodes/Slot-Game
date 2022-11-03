@@ -16,3 +16,7 @@ body {
   flex-direction: row;
   
 }
+
+.scoreboard {
+  color: black;
+}
