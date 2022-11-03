@@ -1,34 +1,37 @@
 // keys values / array of objects
-const colours = {
-  "aqua"  : 0, 
-  "green" : 1, 
-  "blue"  : 2, 
-  "red"   : 3, 
-  "pink"  : 4, 
-  "grey"  : 5, 
-  "black" : 6, 
-  "purple": 7, 
-  "yellow": 8, 
-  "white" : 9, 
-}
+// const colours = {
+//   "aqua"  : 0, 
+//   "green" : 1, 
+//   "blue"  : 2, 
+//   "red"   : 3, 
+//   "pink"  : 4, 
+//   "grey"  : 5, 
+//   "black" : 6, 
+//   "purple": 7, 
+//   "yellow": 8, 
+//   "white" : 9, 
+// }
 
-const items = Object.keys(colours).map(function(key) {
-  return [key, colours[key]]
-})
+// const items = Object.keys(colours).map(function(key) {
+//   return [key, colours[key]]
+// })
+const emojis = ['❤️', '🌟', '🐍', '📍']
 
 
-items.sort(function(first, second) {
-  return second[1] - first[1];
-})
 
-console.log(items.slice(0,10))
+// items.sort(function(first, second) {
+//   return second[1] - first[1];
+// })
+
+// console.log(items.slice(0,10))
 
 
 // const coloursArray = ["1", "2", "3"]
 
 
 function random() {
-  return Math.floor(Math.random() * 9)
+  const number = Math.floor(Math.random() * emojis.length)
+  return emojis[number]
 }
 
 
